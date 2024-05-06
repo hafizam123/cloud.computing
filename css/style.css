@@ -719,3 +719,44 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+
+/* Media queries untuk tampilan desktop */
+@media only screen and (min-width: 768px) {
+    .section {
+        padding: 0 50px;
+    }
+    .main-content {
+        padding-left: 300px;
+    }
+    .aside {
+        width: 300px;
+        padding: 40px;
+    }
+    .nav-toggler {
+        display: block;
+    }
+}
+
+/* Media queries untuk tampilan seluler */
+@media only screen and (max-width: 767px) {
+    .main-content {
+        padding-left: 0;
+    }
+    .aside {
+        width: 100%;
+        padding: 30px;
+        position: static;
+    }
+    .nav-toggler {
+        display: block;
+        left: 15px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .home .home-info, .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
